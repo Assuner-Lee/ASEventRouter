@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ASEventRouter_Example' do
+  pod 'ASEventRouter', :path => '../'
+
+  target 'ASEventRouter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
