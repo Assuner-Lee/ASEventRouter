@@ -1,0 +1,6 @@
+framework module ASEventRouter {
+  umbrella header "ASEventRouter-umbrella.h"
+
+  export *
+  module * { export * }
+}

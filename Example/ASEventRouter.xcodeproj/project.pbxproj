@@ -24,6 +24,7 @@
 		6725DD9ACEB655B0B3BA1CD6 /* Pods_ASEventRouter_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E491DA3FAE0A7CB8B1D8C17 /* Pods_ASEventRouter_Example.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		9C52A8F320E8FC28006B5509 /* ASTestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C52A8F220E8FC28006B5509 /* ASTestModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,14 +59,16 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		69AEF0E694561D11E9911746 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		69AEF0E694561D11E9911746 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		705BE7A7F493F2BC1D0C6DEF /* Pods-ASEventRouter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASEventRouter_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASEventRouter_Example/Pods-ASEventRouter_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71D6D8806A13FAD06F439763 /* Pods_ASEventRouter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASEventRouter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C52A8F120E8FC28006B5509 /* ASTestModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASTestModule.h; sourceTree = "<group>"; };
+		9C52A8F220E8FC28006B5509 /* ASTestModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASTestModule.m; sourceTree = "<group>"; };
 		BAB29428CDF38EBD57B210BB /* Pods-ASEventRouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASEventRouter_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASEventRouter_Tests/Pods-ASEventRouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		BE04ACDA4C715C708441EC8D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		BF9C9D7561B83AB8CE57088F /* ASEventRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ASEventRouter.podspec; path = ../ASEventRouter.podspec; sourceTree = "<group>"; };
+		BE04ACDA4C715C708441EC8D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BF9C9D7561B83AB8CE57088F /* ASEventRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ASEventRouter.podspec; path = ../ASEventRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C6FD25C50915B2CDDEA6DEF7 /* Pods-ASEventRouter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASEventRouter_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASEventRouter_Example/Pods-ASEventRouter_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +137,8 @@
 			children = (
 				6003F59C195388D20070C39A /* ASAppDelegate.h */,
 				6003F59D195388D20070C39A /* ASAppDelegate.m */,
+				9C52A8F120E8FC28006B5509 /* ASTestModule.h */,
+				9C52A8F220E8FC28006B5509 /* ASTestModule.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* ASViewController.h */,
 				6003F5A6195388D20070C39A /* ASViewController.m */,
@@ -358,6 +363,7 @@
 				6003F59E195388D20070C39A /* ASAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* ASViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				9C52A8F320E8FC28006B5509 /* ASTestModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

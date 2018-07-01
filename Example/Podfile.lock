@@ -1,0 +1,16 @@
+PODS:
+  - ASEventRouter (0.1.0)
+
+DEPENDENCIES:
+  - ASEventRouter (from `../`)
+
+EXTERNAL SOURCES:
+  ASEventRouter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ASEventRouter: 23ad25f37286e239f9e4aec439e076af82c597be
+
+PODFILE CHECKSUM: 81d52892391bcbabc5c912377ffb4566cd278534
+
+COCOAPODS: 1.5.2

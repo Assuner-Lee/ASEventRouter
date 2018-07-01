@@ -7,9 +7,11 @@
 //
 
 #import "ASViewController.h"
+#import "ASEventRouter.h"
 
 @interface ASViewController ()
-
+- (IBAction)testEvent:(id)sender;
+- (IBAction)testPrivateEvent:(id)sender;
 @end
 
 @implementation ASViewController
@@ -26,4 +28,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)testEvent:(id)sender {
+    ASEvent *event = [ASEvent eventWithSelector:@"testEvent:"];
+    event.args = @{@"arg": @"testArg"};
+    [[ASEventRouter sharedInstacnce] sendEvent:event];
+}
+
+- (IBAction)testPrivateEvent:(id)sender {
+    ASPrivateEvent *event = [ASPrivateEvent eventWithSelector:@"testPrivateEvent:" privateModule:@"ASTestModule"];
+    event.args = @{@"arg": @10};
+    NSInteger retValue = [[[ASEventRouter sharedInstacnce] sendPrivateEvent:event] integerValue];
+    NSLog(@"send private event: retValue: %zd", retValue);
+}
 @end

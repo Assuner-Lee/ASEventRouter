@@ -22,7 +22,7 @@ pod 'ASEventRouter'
 
 ## Author
 
-Assuner-Lee, yongguang.li@ele.me
+Assuner
 
 ## License
 
